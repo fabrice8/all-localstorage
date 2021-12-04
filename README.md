@@ -40,13 +40,13 @@ import Storage from 'all-localstorage';
 Via HTML `<script>` tag with the CDN source:
 
 ```HTML
-<script src="https://cdn.jsdelivr.net/npm/all-localstorage@1.0.0/all-localstorage.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/all-localstorage@1.0.1/all-localstorage.min.js" type="text/javascript"></script>
 ```
 
-Or download `all-localstorage.js` or `all-localstorage.min.js` files from the repository into your project.
+Or download `localstorage.js` or `localstorage.min.js` files from the repository into your project.
 
 ```HTML
-<script src="/all-localstorage.min.js" type="text/javascript"></script>
+<script src="/localstorage.min.js" type="text/javascript"></script>
 ```
 
 
@@ -181,7 +181,7 @@ Sometimes, when using a View rendering engine like `handlebars`, `twig`, ... for
     <!-- UserData is injected: Eg. Using handlebar view engine -->
     <div data-store="profile" data-store-type="set" data-store-value="{{ UserData }}">
 
-    <script src="/all-localstorage.min.js" type="text/javascript"></script>
+    <script src="/localstorage.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         var store = new Storage()
 
