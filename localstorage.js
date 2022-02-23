@@ -147,7 +147,7 @@
 			let item
 
 			// update is efficient only when the data is an array or object
-			if( !action || !data ) return false
+			if( data == undefined ) return false
 			if( !attribute || !is_storable ) return false
 			if( !( item = StoreManager.getItem( _prefix + _encode( attribute ) ) ) ) return false
 
@@ -246,7 +246,7 @@
 
 		// Crawl the document and collect all data to be
 		// stored define by attributes
-		$ && $('[data-store]').each( function(){
+		window.$ && $('[data-store]').each( function(){
 
 			const
 			$this = $(this),
