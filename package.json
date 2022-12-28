@@ -1,6 +1,6 @@
 {
   "name": "all-localstorage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easy interact with localstorage in browser or node environment",
   "main": "localstorage.js",
   "scripts": {
