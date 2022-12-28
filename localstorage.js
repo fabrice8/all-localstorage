@@ -246,10 +246,10 @@
 
 		// Crawl the document and collect all data to be
 		// stored define by attributes
-		window.$ && $('[data-store]').each( function(){
+		window.$ && window.$('[data-store]').each( function(){
 
 			const
-			$this = $(this),
+			$this = window.$(this),
 			name = $this.data('store'),
 			value = $this.data('store-value')
 
